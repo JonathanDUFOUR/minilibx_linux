@@ -55,7 +55,7 @@ void	*mlx_init()
 ** in remote Xserver connections.
 */
 
-int		mlx_int_deal_shm(t_xvar *xvar)
+void		mlx_int_deal_shm(t_xvar *xvar)
 {
 	int		use_pshm;
 	int		bidon;
@@ -81,7 +81,7 @@ int		mlx_int_deal_shm(t_xvar *xvar)
 ** TrueColor Visual is needed to have *_mask correctly set
 */
 
-int		mlx_int_rgb_conversion(t_xvar *xvar)
+void		mlx_int_rgb_conversion(t_xvar *xvar)
 {
 	bzero(xvar->decrgb,sizeof(int)*6);
 	while (!(xvar->visual->red_mask&1))

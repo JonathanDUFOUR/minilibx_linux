@@ -66,6 +66,7 @@ char	*mlx_int_static_line(char **xpm_data,int *pos,int size)
 	int			len2;
 	char		*str;
 
+	(void)size;
 	str = xpm_data[(*pos)++];
 	if ((len2 = strlen(str))>len)
 	{
@@ -115,7 +116,7 @@ int	mlx_int_get_text_rgb(char *name, char *end)
 }
 
 
-int	mlx_int_xpm_set_pixel(t_img *img, char *data, int opp, int col, int x)
+void	mlx_int_xpm_set_pixel(t_img *img, char *data, int opp, int col, int x)
 {
 	int	dec;
 	
@@ -157,6 +158,9 @@ void	*mlx_int_parse_xpm(t_xvar *xvar,void *info,int info_size,char *(*f)())
 		XGCValues	xgcv;
 		Pixmap	clip_pix;
 
+		(void)clip_pix;
+		(void)xgcv;
+		(void)clip_img;
 		colors = 0;
 		colors_direct = 0;
 		img = 0;
@@ -182,6 +186,7 @@ void	*mlx_int_parse_xpm(t_xvar *xvar,void *info,int info_size,char *(*f)())
 						RETURN;
 
 		clip_data = 0;
+		(void)clip_data;
 
 		i = nc;
 		while (i--)
@@ -287,7 +292,7 @@ void	*mlx_int_parse_xpm(t_xvar *xvar,void *info,int info_size,char *(*f)())
 }
 
 
-int	mlx_int_file_get_rid_comment(char *ptr, int size)
+void	mlx_int_file_get_rid_comment(char *ptr, int size)
 {
 		int	com_begin;
 		int	com_end;
@@ -322,7 +327,7 @@ void	*mlx_xpm_file_to_image(t_xvar *xvar,char *file,int *width,int *height)
 				return ((void *)0);
 		}
 		mlx_int_file_get_rid_comment(ptr, size);
-		if (img = mlx_int_parse_xpm(xvar,ptr,size,mlx_int_get_line))
+		if ((img = mlx_int_parse_xpm(xvar,ptr,size,mlx_int_get_line)))
 		{
 				*width = img->width;
 				*height = img->height;
@@ -336,7 +341,7 @@ void	*mlx_xpm_to_image(t_xvar *xvar,char **xpm_data,int *width,int *height)
 {
 		t_img	*img;
 
-		if (img = mlx_int_parse_xpm(xvar,xpm_data,0,mlx_int_static_line))
+		if ((img = mlx_int_parse_xpm(xvar,xpm_data,0,mlx_int_static_line)))
 		{
 				*width = img->width;
 				*height = img->height;

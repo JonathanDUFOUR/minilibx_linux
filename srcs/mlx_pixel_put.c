@@ -13,7 +13,7 @@
 
 
 
-int		mlx_pixel_put(t_xvar *xvar,t_win_list *win,
+void		mlx_pixel_put(t_xvar *xvar,t_win_list *win,
 			      int x,int y,int color)
 {
    XGCValues	xgcv;
