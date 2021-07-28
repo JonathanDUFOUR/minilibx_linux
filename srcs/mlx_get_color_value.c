@@ -1,20 +1,20 @@
-/*
-** mlx_get_color_value.c for MiniLibX in 
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Mon Jul 31 19:01:33 2000 Charlie Root
-** Last update Thu Oct  4 15:04:13 2001 Charlie Root
-*/
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_get_color_value.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/07/31 01:51:55 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 01:53:07 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
 
-
-int             mlx_get_color_value(t_xvar *xvar,int color)
+int	mlx_get_color_value(t_xvar *xvar, int color)
 {
-  return(mlx_int_get_good_color(xvar,color));
+	return(mlx_int_get_good_color(xvar, color));
 }
 
 int		mlx_int_get_good_color(t_xvar *xvar,int color)

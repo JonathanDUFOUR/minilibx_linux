@@ -1,18 +1,16 @@
-/*
-** mlx_int_wait_first_expose.c for minilibx in 
-** 
-** Made by olivier crouzet
-** Login   <ol@epita.fr>
-** 
-** Started on  Tue Oct 17 09:26:45 2000 olivier crouzet
-** Last update Fri Feb 23 17:27:10 2001 Charlie Root
-*/
-
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_int_wait_first_expose.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/10/17 09:26:45 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 02:07:11 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
-
-
 
 void	mlx_int_wait_first_expose(t_xvar *xvar,Window win)
 {

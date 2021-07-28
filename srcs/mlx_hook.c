@@ -1,18 +1,16 @@
-/*
-** mlx_hook.c for MiniLibX in 
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Thu Aug  3 11:49:06 2000 Charlie Root
-** Last update Fri Jan 28 17:05:28 2005 Olivier Crouzet
-*/
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_hook.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/08/03 01:54:19 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 01:55:21 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
-
-
-
 
 void	mlx_hook(t_win_list *win, int x_event, int x_mask, 
 		 int (*funct)(),void *param)

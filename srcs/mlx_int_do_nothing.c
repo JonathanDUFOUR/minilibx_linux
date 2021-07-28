@@ -1,14 +1,14 @@
-/*
-** mlx_int_do_nothing.c for MiniLibX in 
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Tue Aug  8 12:58:24 2000 Charlie Root
-** Last update Tue Sep 25 15:56:22 2001 Charlie Root
-*/
-
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_int_do_nothing.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/08/08 12:58:24 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 01:59:26 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 void	mlx_int_do_nothing(void *param)
 {

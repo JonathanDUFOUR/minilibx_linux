@@ -1,18 +1,16 @@
-/*
-** mlx_xpm.c for minilibX in 
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Fri Dec  8 11:07:24 2000 Charlie Root
-** Last update Thu Oct  4 16:00:22 2001 Charlie Root
-*/
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_lib_xpm.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/12/08 11:07:24 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 02:10:34 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
-
-
-
 
 void		*mlx_int_xpm_f_image(t_xvar *xvar,int *width,int *height,
 				     int (*xpm_func)(),void *param)

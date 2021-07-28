@@ -1,16 +1,16 @@
-/*
-** mlx_int_str_to_wordtab.c for MinilibX in 
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Wed Sep 13 11:36:09 2000 Charlie Root
-** Last update Fri Dec 14 11:02:09 2001 Charlie Root
-*/
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_int_str_to_wordtab.c                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/09/13 11:36:09 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 02:05:30 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
-
 
 int	mlx_int_str_str(char *str,char *find,int len)
 {

@@ -1,18 +1,16 @@
-/*
-** mlx_expose_hook.c for MiniLibX in 
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Thu Aug  3 11:49:06 2000 Charlie Root
-** Last update Fri Feb 23 17:07:42 2001 Charlie Root
-*/
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_expose_hook.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/08/03 01:48:21 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 01:49:11 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
-
-
-
 
 void	mlx_expose_hook(t_win_list *win,int (*funct)(),void *param)
 {

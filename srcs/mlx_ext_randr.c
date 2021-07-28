@@ -1,9 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_ext_randr.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/07/28 01:49:22 by jodufour          #+#    #+#             */
+/*   Updated: 2021/07/28 01:50:00 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "mlx_int.h"
 
-
-#include	"mlx_int.h"
-
-#include	<unistd.h>
+#include <unistd.h>
 #include <X11/extensions/Xrandr.h>
 
 /* global for independant extension */

@@ -1,12 +1,14 @@
-/*
-** mlx_int_anti_resize_win.c for MiniLibX in 
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Tue Aug  8 14:31:05 2000 Charlie Root
-** Last update Tue Sep 25 15:56:58 2001 Charlie Root
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_int_anti_resize_win.c                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/08/08 14:31:05 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 01:58:34 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
 

@@ -1,16 +1,16 @@
-/*
-** mlx_destroy_image.c for MinilibX in 
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Tue Mar 12 10:25:15 2002 Charlie Root
-** Last update Tue May 15 16:45:54 2007 Olivier Crouzet
-*/
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_destroy_image.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2002/03/12 01:43:35 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 01:46:54 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
-
 
 void	mlx_destroy_image(t_xvar *xvar, t_img *img)
 {

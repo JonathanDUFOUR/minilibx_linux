@@ -1,14 +1,14 @@
-/*
-** mlx_get_data_addr.c for MiniLibX in raytraceur
-** 
-** Made by Charlie Root
-** Login   <ol@epitech.net>
-** 
-** Started on  Mon Aug 14 15:45:57 2000 Charlie Root
-** Last update Thu Sep 27 19:05:25 2001 Charlie Root
-*/
-
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mlx_get_data_addr.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2000/08/14 01:53:20 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/07/28 01:54:02 by jodufour         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	"mlx_int.h"
 
