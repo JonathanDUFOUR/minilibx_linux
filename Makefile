@@ -107,4 +107,25 @@ fclean:
 
 re:	fclean all
 
-.PHONY:	all clean fclean re
+norm:
+	@norminette ${SRCD} | grep 'Error' ; true
+
+coffee:
+	@echo '                                              '
+	@echo '                   "   "                      '
+	@echo '                  " " " "                     '
+	@echo '                 " " " "                      '
+	@echo '         _.-==="""""""""===-._                '
+	@echo '        |=___    ~ ~ ~    ___=|=,.            '
+	@echo '        |    """======="""    |  \\           '
+	@echo '        |                     |   ||          '
+	@echo '        |                     |   ||          '
+	@echo '        |                     |   ||          '
+	@echo '        |                     |   ||          '
+	@echo '        |                     |  //           '
+	@echo '         \                   /==""            '
+	@echo '          \                 /                 '
+	@echo '           ""--._______.--""                  '
+	@echo '                                              '
+
+.PHONY:	all clean fclean re norm coffee
