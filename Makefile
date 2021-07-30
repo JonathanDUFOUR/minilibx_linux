@@ -103,7 +103,7 @@ clean:
 	${RM} ${OBJD}
 
 fclean:
-	${RM} ${OBJD} ${NAME}
+	${RM} ${OBJD} ${NAME} ${NAME_UNAME}
 
 re:	fclean all
 
