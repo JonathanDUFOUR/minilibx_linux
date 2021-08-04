@@ -20,9 +20,9 @@ NAME_UNAME	=	libmlx_$(shell uname).a
 #              COMMANDS              #
 ######################################
 CC			=	gcc -c -o
-LINKER		=	ar rcs
+LINK		=	ar rcs
 RM			=	rm -rf
-MAKEDIR		=	mkdir -p
+MKDIR		=	mkdir -p
 CP			=	cp
 
 #####################################
@@ -36,36 +36,44 @@ INCD		=	includes/
 #            SOURCE FILES            #
 ######################################
 SRCS		=	\
-				mlx_clear_window.c				\
-				mlx_destroy_display.c			\
-				mlx_destroy_image.c				\
-				mlx_destroy_window.c			\
-				mlx_expose_hook.c				\
-				mlx_flush_event.c				\
-				mlx_get_color_value.c			\
-				mlx_get_data_addr.c				\
-				mlx_hook.c						\
-				mlx_init.c						\
-				mlx_int_anti_resize_win.c		\
-				mlx_int_do_nothing.c			\
-				mlx_int_get_visual.c			\
-				mlx_int_param_event.c			\
-				mlx_int_set_win_event_mask.c	\
-				mlx_int_str_to_wordtab.c		\
-				mlx_int_wait_first_expose.c		\
-				mlx_key_hook.c					\
-				mlx_loop_hook.c					\
-				mlx_loop.c						\
-				mlx_mouse_hook.c				\
-				mlx_mouse.c						\
-				mlx_new_image.c					\
-				mlx_new_window.c				\
-				mlx_pixel_put.c					\
-				mlx_put_image_to_window.c		\
-				mlx_rgb.c						\
-				mlx_screen_size.c				\
-				mlx_set_font.c					\
-				mlx_string_put.c				\
+				${addprefix mlx_int_param_event/,	\
+					mlx_int_param_ButtonPress.c		\
+					mlx_int_param_ButtonRelease.c	\
+					mlx_int_param_Expose.c			\
+					mlx_int_param_generic.c			\
+					mlx_int_param_KeyPress.c		\
+					mlx_int_param_KeyRelease.c		\
+					mlx_int_param_MotionNotify.c	\
+				}									\
+				mlx_clear_window.c					\
+				mlx_destroy_display.c				\
+				mlx_destroy_image.c					\
+				mlx_destroy_window.c				\
+				mlx_expose_hook.c					\
+				mlx_flush_event.c					\
+				mlx_get_color_value.c				\
+				mlx_get_data_addr.c					\
+				mlx_hook.c							\
+				mlx_init.c							\
+				mlx_int_anti_resize_win.c			\
+				mlx_int_do_nothing.c				\
+				mlx_int_get_visual.c				\
+				mlx_int_set_win_event_mask.c		\
+				mlx_int_str_to_wordtab.c			\
+				mlx_int_wait_first_expose.c			\
+				mlx_key_hook.c						\
+				mlx_loop_hook.c						\
+				mlx_loop.c							\
+				mlx_mouse_hook.c					\
+				mlx_mouse.c							\
+				mlx_new_image.c						\
+				mlx_new_window.c					\
+				mlx_pixel_put.c						\
+				mlx_put_image_to_window.c			\
+				mlx_rgb.c							\
+				mlx_screen_size.c					\
+				mlx_set_font.c						\
+				mlx_string_put.c					\
 				mlx_xpm.c
 
 ######################################
@@ -86,7 +94,7 @@ LDFLAGS		=
 #               FLAGS               #
 #####################################
 ${NAME}:	${OBJS}
-	${LINKER} $@ ${LDFLAGS} $^
+	${LINK} $@ ${LDFLAGS} $^
 
 ${NAME_UNAME}:	${NAME}
 	${CP} $< $@
@@ -96,7 +104,7 @@ all: ${NAME} ${NAME_UNAME}
 -include ${DEPS}
 
 ${OBJD}%.o:	${SRCD}%.c
-	@${MAKEDIR} ${@D}
+	@${MKDIR} ${@D}
 	${CC} $@ ${CFLAGS} $<
 
 clean:

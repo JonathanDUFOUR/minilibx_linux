@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mlx_get_data_addr.c                                :+:      :+:    :+:   */
+/*   mlx_int_param_MotionNotify.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2000/08/14 01:53:20 by Charlie Roo       #+#    #+#             */
-/*   Updated: 2021/08/04 20:04:27 by jodufour         ###   ########.fr       */
+/*   Created: 2021/08/04 20:54:13 by jodufour          #+#    #+#             */
+/*   Updated: 2021/08/04 20:54:32 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"mlx_int.h"
+#include "mlx_int.h"
 
-char	*mlx_get_data_addr(t_img *img, int *bits_per_pixel,
-							int *size_line, int *endian)
+void	mlx_int_param_MotionNotify(t_xvar *xvar, XEvent *ev, t_win_list *win)
 {
-	*bits_per_pixel = img->bpp;
-	*size_line = img->size_line;
-	*endian = img->image->byte_order;
-	return (img->data);
+	(void)xvar;
+	win->hooks[MotionNotify].hook(ev->xbutton.x, ev->xbutton.y,
+		win->hooks[MotionNotify].param);
 }
