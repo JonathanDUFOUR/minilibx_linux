@@ -45,6 +45,17 @@ SRCS		=	\
 					mlx_int_param_KeyRelease.c		\
 					mlx_int_param_MotionNotify.c	\
 				}									\
+				${addprefix mlx_new_image/,			\
+					mlx_clean_quit.c				\
+					mlx_int_new_image.c				\
+					mlx_int_new_xshm_image.c		\
+					mlx_new_image2.c				\
+					mlx_new_image.c					\
+					mlx_set_val.c					\
+				}									\
+				${addprefix mlx_xpm/,				\
+					mlx_xpm.c						\
+				}									\
 				mlx_clear_window.c					\
 				mlx_destroy_display.c				\
 				mlx_destroy_image.c					\
@@ -66,15 +77,12 @@ SRCS		=	\
 				mlx_loop.c							\
 				mlx_mouse_hook.c					\
 				mlx_mouse.c							\
-				mlx_new_image.c						\
 				mlx_new_window.c					\
 				mlx_pixel_put.c						\
 				mlx_put_image_to_window.c			\
-				mlx_rgb.c							\
 				mlx_screen_size.c					\
 				mlx_set_font.c						\
-				mlx_string_put.c					\
-				mlx_xpm.c
+				mlx_string_put.c
 
 ######################################
 #            OBJECT FILES            #

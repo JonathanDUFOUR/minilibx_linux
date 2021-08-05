@@ -48,7 +48,7 @@ void	*mlx_new_window(void *mlx_ptr, int size_x, int size_y, char *title);
 **  return void *0 if failed
 */
 void	mlx_clear_window(void *mlx_ptr, void *win_ptr);
-void	mlx_pixel_put(void *mlx_ptr, void *win_ptr, int x, int y, int color);
+void	mlx_pixel_put(void *mlx_ptr, void *win_ptr, int *xy, int color);
 /*
 **  origin for x & y is top left corner of the window
 **  y down is positive
@@ -104,8 +104,7 @@ int mlx_loop_end (void *mlx_ptr);
 **  Usually asked...
 */
 
-void	mlx_string_put(void *mlx_ptr, void *win_ptr, int x, int y, int color,
-		       char *string);
+void	mlx_string_put(void *mlx_ptr, void *win_ptr, int *xyc, char *string);
 void	mlx_set_font(void *mlx_ptr, void *win_ptr, char *name);
 void	*mlx_xpm_to_image(void *mlx_ptr, char **xpm_data,
 			  int *width, int *height);

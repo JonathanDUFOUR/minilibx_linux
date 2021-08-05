@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mlx_screen_size.c                                  :+:      :+:    :+:   */
+/*   mlx_new_image.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/28 02:25:19 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 01:57:10 by jodufour         ###   ########.fr       */
+/*   Created: 2000/08/14 15:29:14 by Charlie Roo       #+#    #+#             */
+/*   Updated: 2021/08/05 00:03:55 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"mlx_int.h"
 
-int	mlx_get_screen_size(void *mlx_ptr, int *size_x, int *size_y)
-{
-	XWindowAttributes	xwAttr;
-	Status				ret;
-	t_xvar				*xvar;
+void	*mlx_int_new_xshm_image(t_xvar *xvar, int width, int height,
+			int format);
+void	*mlx_int_new_image(t_xvar *xvar, int width, int height, int format);
 
-	xvar = mlx_ptr;
-	ret = XGetWindowAttributes(xvar->display, xvar->root, &xwAttr);
-	(*size_x) = xwAttr.width;
-	(*size_y) = xwAttr.height;
-	return (ret);
+void	*mlx_new_image(t_xvar *xvar, int width, int height)
+{
+	t_img	*img;
+
+	if (xvar->use_xshm)
+	{
+		img = mlx_int_new_xshm_image(xvar, width, height, ZPixmap);
+		if (img)
+			return (img);
+	}
+	return (mlx_int_new_image(xvar, width, height, ZPixmap));
 }
