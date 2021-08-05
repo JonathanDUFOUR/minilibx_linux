@@ -6,11 +6,12 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 23:55:27 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 00:07:04 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:32:34 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mlx_int.h"
+#include "t_img.h"
 
 static void	set_val(t_img *img, t_xvar *xvar, int width, int height)
 {

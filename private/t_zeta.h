@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 16:59:25 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 19:25:43 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:34:37 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define T_ZETA_H
 
 # include "mlx_int.h"
+# include "t_img.h"
+# include "t_xpm_col.h"
 
 typedef struct s_zeta	t_zeta;
 

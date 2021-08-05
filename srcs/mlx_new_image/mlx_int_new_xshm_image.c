@@ -6,11 +6,12 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 00:00:01 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 01:01:51 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:33:07 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mlx_int.h"
+#include "t_img.h"
 
 void			*mlx_clean_quit0(t_img *img);
 void			*mlx_clean_quit1(t_img *img);

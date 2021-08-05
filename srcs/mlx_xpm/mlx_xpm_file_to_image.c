@@ -6,11 +6,12 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 17:39:50 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 19:03:37 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:35:08 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mlx_int.h"
+#include "t_img.h"
 
 void	mlx_int_file_get_rid_comment(char *ptr, int size);
 char	*mlx_int_get_line(char *ptr, int *pos, int size);

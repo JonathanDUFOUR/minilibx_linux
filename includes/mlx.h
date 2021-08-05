@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2000/07/31 16:37:50 by Charlie Roo       #+#    #+#             */
-/*   Updated: 2021/08/05 21:25:34 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:27:33 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@
 
 #ifndef MLX_H
 # define MLX_H
+
+# include "t_xvar.h"
 
 void	*mlx_init(void);
 /*
@@ -51,7 +53,7 @@ void	mlx_pixel_put(void *mlx_ptr, void *win_ptr, int *xy, int color);
 /*****************************************************************************/
 /*                                IMAGE STUFF                                */
 /*****************************************************************************/
-void	*mlx_new_image(void *mlx_ptr, int width, int height);
+void	*mlx_new_image(t_xvar *xvar, int width, int height);
 /*
 **  return void *0 if failed
 **  obsolete : image2 data is stored using bit planes
@@ -67,7 +69,7 @@ char	*mlx_get_data_addr(void *img_ptr, int *bits_per_pixel,
 **  for mlx_new_image2, 2nd arg of mlx_get_data_addr is number_of_planes
 */
 
-int		mlx_get_color_value(void *mlx_ptr, int color);
+int		mlx_get_color_value(t_xvar *xvar, int color);
 
 /*****************************************************************************/
 /*                            DEALING WITH EVENTS                            */

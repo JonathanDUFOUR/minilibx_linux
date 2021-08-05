@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mlx_new_image2.c                                   :+:      :+:    :+:   */
+/*   t_xpm_col.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/04 23:53:52 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 23:33:35 by jodufour         ###   ########.fr       */
+/*   Created: 2021/08/05 23:22:53 by jodufour          #+#    #+#             */
+/*   Updated: 2021/08/05 23:24:01 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mlx_int.h"
-#include "t_img.h"
+#ifndef T_XPM_COL_H
+# define T_XPM_COL_H
 
-void	*mlx_int_new_image(t_xvar *xvar, int width, int height, int format);
+typedef struct s_xpm_col	t_xpm_col;
 
-void	*mlx_new_image2(t_xvar *xvar, int width, int height)
+struct	s_xpm_col
 {
-	t_img	*img;
+	int	name;
+	int	col;
+};
 
-	if (xvar->use_xshm)
-	{
-		img = mlx_int_new_xshm_image(xvar, width, height, XYPixmap);
-		if (img)
-			return (img);
-	}
-	return (mlx_int_new_image(xvar, width, height, XYPixmap));
-}
+#endif

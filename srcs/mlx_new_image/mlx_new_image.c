@@ -6,11 +6,12 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2000/08/14 15:29:14 by Charlie Roo       #+#    #+#             */
-/*   Updated: 2021/08/05 00:03:55 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:33:23 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"mlx_int.h"
+#include "mlx_int.h"
+#include "t_img.h"
 
 void	*mlx_int_new_xshm_image(t_xvar *xvar, int width, int height,
 			int format);

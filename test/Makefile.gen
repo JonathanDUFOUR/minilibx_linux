@@ -1,11 +1,10 @@
 INC=/usr/include
 
-
 INCLIB=$(INC)/../lib
 
 CC=gcc
 
-CFLAGS= -I$(INC) -O3 -I.. -g
+CFLAGS= -I$(INC) -O3 -I../includes -I../private -g
 
 NAME= mlx-test
 SRC = main.c

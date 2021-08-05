@@ -6,11 +6,12 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 00:44:25 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 00:57:03 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:33:44 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mlx_int.h"
+#include "t_img.h"
 
 extern int	g_mlx_X_error;
 

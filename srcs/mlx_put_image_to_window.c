@@ -6,11 +6,12 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2000/08/14 15:55:49 by Charlie Roo       #+#    #+#             */
-/*   Updated: 2021/08/05 01:37:57 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:36:40 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"mlx_int.h"
+#include "mlx_int.h"
+#include "t_img.h"
 
 void	mlx_put_image_to_window(t_xvar *xvar, t_win_list *win, t_img *img,
 			int *xy)
