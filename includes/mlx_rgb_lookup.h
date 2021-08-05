@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 01:43:58 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 01:55:47 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 21:52:11 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 typedef struct s_col_name	t_col_name;
 
-static const t_col_name g_mlx_col_name[] =
+static const t_col_name		g_mlx_col_name[] =
 {
 	{"snow", 0xfffafa},
 	{"ghost white", 0xf8f8ff},
@@ -774,6 +774,5 @@ static const t_col_name g_mlx_col_name[] =
 	{"none", -1},
 	{0, 0}
 };
-
 
 #endif

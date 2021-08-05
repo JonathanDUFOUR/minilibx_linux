@@ -6,14 +6,14 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 22:59:04 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/04 23:02:20 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 21:26:29 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MLX_EVENT_LOOKUP_H
 # define MLX_EVENT_LOOKUP_H
 
-#include "mlx_int.h"
+# include "mlx_int.h"
 
 void	mlx_int_param_KeyPress(t_xvar *xvar, XEvent *ev, t_win_list *win);
 void	mlx_int_param_KeyRelease(t_xvar *xvar, XEvent *ev, t_win_list *win);
@@ -22,7 +22,6 @@ void	mlx_int_param_ButtonRelease(t_xvar *xvar, XEvent *ev, t_win_list *win);
 void	mlx_int_param_MotionNotify(t_xvar *xvar, XEvent *ev, t_win_list *win);
 void	mlx_int_param_Expose(t_xvar *xvar, XEvent *ev, t_win_list *win);
 void	mlx_int_param_generic(t_xvar *xvar, XEvent *ev, t_win_list *win);
-
 
 void	(*(g_mlx_int_param_event[]))() =
 {
