@@ -37,7 +37,7 @@ PRIV_INCD	=	private/
 #            SOURCE FILES            #
 ######################################
 SRCS		=	\
-				${addprefix mlx_int_param_event/,	\
+				${addprefix mlx_event/,				\
 					mlx_int_param_ButtonPress.c		\
 					mlx_int_param_ButtonRelease.c	\
 					mlx_int_param_Expose.c			\
