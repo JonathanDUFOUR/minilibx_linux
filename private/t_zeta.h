@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 16:59:25 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 17:03:44 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/05 19:25:43 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,9 @@ struct s_zeta
 	XImage		*clip_img;
 	XGCValues	xgcv;
 	Pixmap		clip_pix;
+	void		*info;
+	int			info_size;
+	char		*(*f)();
 };
 
 #endif

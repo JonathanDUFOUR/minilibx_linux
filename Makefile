@@ -65,6 +65,8 @@ SRCS		=	\
 					mlx_return.c					\
 					mlx_xpm_file_to_image.c			\
 					mlx_xpm_to_image.c				\
+					part0_4.c						\
+					spart0_4.c						\
 					strlcpy_is_not_posix.c			\
 				}									\
 				mlx_clear_window.c					\
