@@ -31,6 +31,7 @@ CP			=	cp
 SRCD		=	srcs/
 OBJD		=	objs/
 INCD		=	includes/
+PRIV_INCD	=	private/
 
 ######################################
 #            SOURCE FILES            #
@@ -54,7 +55,17 @@ SRCS		=	\
 					mlx_set_val.c					\
 				}									\
 				${addprefix mlx_xpm/,				\
-					mlx_xpm.c						\
+					mlx_int_file_get_rid_comment.c	\
+					mlx_int_get_col_name.c			\
+					mlx_int_get_line.c				\
+					mlx_int_get_text_rgb.c			\
+					mlx_int_parse_xpm.c				\
+					mlx_int_static_line.c			\
+					mlx_int_xpm_set_pixel.c			\
+					mlx_return.c					\
+					mlx_xpm_file_to_image.c			\
+					mlx_xpm_to_image.c				\
+					strlcpy_is_not_posix.c			\
 				}									\
 				mlx_clear_window.c					\
 				mlx_destroy_display.c				\
@@ -95,7 +106,7 @@ DEPS		=	${OBJS:.o=.d}
 #####################################
 #               FLAGS               #
 #####################################
-CFLAGS		=	-Wall -Wextra -MMD -I${INCD} -Werror
+CFLAGS		=	-Wall -Wextra -Werror -MMD -I${INCD} -I${PRIV_INCD}
 LDFLAGS		=	
 
 #####################################
