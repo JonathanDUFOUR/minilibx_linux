@@ -10,9 +10,9 @@
 
 ## Please use configure script
 
-######################################
-#             EXECUTABLE             #
-######################################
+#######################################
+#               LIBRARY               #
+#######################################
 NAME		=	libmlx.a
 NAME_UNAME	=	libmlx_$(shell uname).a
 
@@ -45,6 +45,7 @@ SRCS		=	\
 					mlx_int_param_KeyPress.c		\
 					mlx_int_param_KeyRelease.c		\
 					mlx_int_param_MotionNotify.c	\
+					mlx_int_param_undef.c			\
 				}									\
 				${addprefix mlx_new_image/,			\
 					mlx_clean_quit.c				\
