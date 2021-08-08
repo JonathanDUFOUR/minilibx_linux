@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2000/07/31 16:37:50 by Charlie Roo       #+#    #+#             */
-/*   Updated: 2021/08/05 23:27:33 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/08 08:12:21 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	*mlx_new_window(void *mlx_ptr, int size_x, int size_y, char *title);
 */
 
 void	mlx_clear_window(void *mlx_ptr, void *win_ptr);
-void	mlx_pixel_put(void *mlx_ptr, void *win_ptr, int *xy, int color);
+void	mlx_pixel_put(void *mlx_ptr, void *win_ptr, int *xyc);
 /*
 **	origin for x & y is top left corner of the window
 **	y down is positive

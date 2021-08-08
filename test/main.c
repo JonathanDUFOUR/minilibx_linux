@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 22:01:07 by jodufour          #+#    #+#             */
-/*   Updated: 2021/08/05 23:29:09 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/08/08 08:15:15 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -264,7 +264,7 @@ int	color_map_1(void *win, int w, int h)
 		while (xyc[1]--)
 		{
 			xyc[2] = (xyc[0] * 255) / w + ((((w - xyc[0]) * 255) / w) << 16) + (((xyc[1] * 255) / h) << 8);
-			mlx_pixel_put(mlx, win, xyc, xyc[2]);
+			mlx_pixel_put(mlx, win, xyc);
 		}
 	}
 }
